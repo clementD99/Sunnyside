@@ -1,0 +1,87 @@
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ----- Header ----- */
+
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.links {
+  position: relative;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boutons {
+  display: flex;
+  gap: 2rem;
+}
+
+.boutons a {
+  text-decoration: none;
+  color: hsl(0, 100%, 100%);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 0;
+  top: 3.125rem;
+  color: hsl(0, 100%, 100%);
+}
+
+.title img {
+  position: relative;
+  top: 12.5rem;
+  cursor: pointer;
+}
+
+/* ----- Services ----- */
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#services img {
+  width: 100%;
+}
