@@ -1,5 +1,6 @@
 * {
   font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,11 +10,18 @@ body {
 
 p {
   font-size: 1.125rem;
-  font-weight: 600;
 }
 
 ul {
   list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
 }
 
 /* ----- Header ----- */
@@ -75,13 +83,83 @@ ul {
   cursor: pointer;
 }
 
+/* .arrow {
+  animation: bounce 2s infinite;
+} */
+
 /* ----- Services ----- */
 
 #services {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 6rem;
+}
+
+#services h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  max-width: 26.875rem;
+}
+
+#services p {
+  line-height: 1.6;
+  color: hsl(232, 10%, 55%);
+  max-width: 28.125rem;
 }
 
 #services img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----- Testimonials ----- */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 3rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.625rem;
+}
+
+.testimonials img {
+  border-radius: 6.25rem;
+  width: 6.25rem;
+}
+
+.testimonials h3 {
+  font-size: 1.563rem;
+}
+
+#testimonials-list {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.comment {
+  max-width: 25rem;
+  line-height: 1.8;
+}
+
+.bottom-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profession {
+  color: hsl(213, 9%, 39%);
 }
