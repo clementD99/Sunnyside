@@ -24,6 +24,10 @@ h4 {
   font-weight: 900;
 }
 
+/* #container {
+  max-width: 1200px;
+} */
+
 /* ----- Header ----- */
 
 .header {
@@ -83,10 +87,6 @@ h4 {
   cursor: pointer;
 }
 
-/* .arrow {
-  animation: bounce 2s infinite;
-} */
-
 /* ----- Services ----- */
 
 #services {
@@ -135,7 +135,7 @@ h4 {
   font-size: 1.625rem;
 }
 
-.testimonials img {
+.round {
   border-radius: 6.25rem;
   width: 6.25rem;
 }
@@ -162,4 +162,73 @@ h4 {
 
 .profession {
   color: hsl(213, 9%, 39%);
+}
+
+.testimonials-images {
+  display: flex;
+}
+
+.testimonials-images img {
+  width: 25%;
+  object-fit: cover;
+}
+
+/* ----- Footer ----- */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(167, 34%, 41%);
+  padding: 2rem 3rem;
+}
+
+#footer .title-footer {
+  text-align: center;
+  font-size: 1.75rem;
+  color: hsl(167, 40%, 24%);
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+
+#footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  cursor: pointer;
+}
+
+/* ----- Responsive sidebar ----- */
+
+#responsive-icon {
+  display: none;
+}
+
+/* ----- Elements in responsive ----- */
+
+@media screen and (max-width: 375px) {
+  #container {
+    width: fit-content;
+  }
+
+  #services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #responsive-icon {
+    display: block;
+  }
+
+  .boutons {
+    display: none;
+  }
 }
