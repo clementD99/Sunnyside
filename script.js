@@ -19,7 +19,7 @@ function displayClients(clients) {
     element.dataset.name = client.name;
 
     element.innerHTML = `
-    <img src=${client.photo} alt="${client.photo}">
+    <img class="round" src=${client.photo} alt="${client.photo}">
     <p class="comment">${client.comment}</p>
     <div class="bottom-text">
     <h3 class="name">${client.name}</h3>
