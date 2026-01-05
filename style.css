@@ -26,17 +26,14 @@ h4 {
 
 a {
   text-decoration: none;
+  font-size: 1.125rem;
 }
-
-/* #container {
-  max-width: 1200px;
-} */
 
 /* ----- Header ----- */
 
 .header {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -94,13 +91,13 @@ a {
   position: relative;
   font-size: 4rem;
   margin-bottom: 0;
-  top: 3.125rem;
+  margin-top: 3rem;
   color: hsl(0, 100%, 100%);
 }
 
 .title img {
   position: relative;
-  top: 12.5rem;
+  margin-top: 12.5rem;
   cursor: pointer;
 }
 
@@ -139,7 +136,6 @@ a {
 
 #services .img-text {
   position: relative;
-  display: inline-block;
 }
 
 #services .img-description {
@@ -156,7 +152,7 @@ a {
 }
 
 #services span {
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 /* ----- Testimonials ----- */
@@ -172,6 +168,7 @@ a {
   margin-bottom: 5rem;
   font-size: 1.625rem;
   letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
 .round {
@@ -215,16 +212,15 @@ a {
 /* ----- Footer ----- */
 
 #footer {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   background-color: hsl(167, 34%, 41%);
-  padding: 2rem 3rem;
+  padding: 5rem 3rem;
 }
 
-#footer .title-footer {
-  text-align: center;
-  font-size: 1.75rem;
-  color: hsl(167, 40%, 24%);
+#footer .icon {
+  width: 124px;
+  height: 24px;
+  color: hsl(198, 62%, 26%);
 }
 
 #footer ul {
@@ -253,14 +249,11 @@ a {
 
 /* ----- Elements in responsive ----- */
 
-@media screen and (max-width: 375px) {
-  #container {
-    width: fit-content;
-  }
+@media screen and (max-width: 23.438rem) {
+  /* header responsive */
 
-  #services {
-    display: flex;
-    flex-direction: column;
+  .title h1 {
+    text-align: center;
   }
 
   #responsive-icon {
@@ -271,6 +264,12 @@ a {
     display: none;
   }
 
+  /* testimonials responsive */
+
+  .testimonials {
+    padding: 6rem 0.5rem;
+  }
+
   #testimonials-list {
     flex-direction: column;
     gap: 3.125rem;
@@ -278,5 +277,35 @@ a {
 
   .testimonials h2 {
     font-size: 1.5rem;
+  }
+
+  .testimonials-images {
+    flex-wrap: wrap;
+  }
+
+  .testimonials-images img {
+    display: block;
+    width: 50%;
+  }
+
+  /* services responsive */
+
+  #services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #services .img-text {
+    display: flex;
+  }
+
+  #services img {
+    height: 37.5rem;
+  }
+
+  #services .img-description {
+    left: 0;
+    transform: none;
+    line-height: 1.5;
   }
 }
