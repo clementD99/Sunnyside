@@ -124,8 +124,32 @@ a {
 
 #services p {
   line-height: 1.6;
-  color: hsl(232, 10%, 55%);
+  color: hsl(237, 10%, 37%);
   max-width: 28.125rem;
+}
+
+#services .learn-link::before {
+  background-color: hsl(51, 100%, 49%);
+}
+
+#services .learn-link::after {
+  background-color: red;
+}
+
+#services a::before {
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 10px;
+  top: 75%;
+  border-radius: 25px;
+}
+
+#services a {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
 }
 
 #services img {
@@ -169,6 +193,7 @@ a {
   font-size: 1.625rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  color: hsl(0, 0%, 34%);
 }
 
 .round {
@@ -213,7 +238,7 @@ a {
 
 #footer {
   text-align: center;
-  background-color: hsl(167, 34%, 41%);
+  background-color: hsl(150, 56%, 62%);
   padding: 5rem 3rem;
 }
 
@@ -234,6 +259,10 @@ a {
   color: hsl(167, 40%, 24%);
 }
 
+#footer a:hover {
+  color: hsl(0, 100%, 100%);
+}
+
 #footer .socials {
   display: flex;
   justify-content: center;
@@ -241,11 +270,22 @@ a {
   cursor: pointer;
 }
 
+#footer .social-icon {
+  color: hsl(167, 40%, 24%);
+  transition: color 0.3s ease;
+}
+
+#footer .social-icon:hover {
+  color: hsl(0, 100%, 100%);
+}
+
 /* ----- Responsive sidebar ----- */
 
 #responsive-icon {
   display: none;
 }
+
+/* .sidebar-responsive {} */
 
 /* ----- Elements in responsive ----- */
 
@@ -295,6 +335,14 @@ a {
     flex-direction: column;
   }
 
+  #services h2 {
+    text-align: center;
+  }
+
+  #services p {
+    text-align: center;
+  }
+
   #services .img-text {
     display: flex;
   }
@@ -307,5 +355,10 @@ a {
     left: 0;
     transform: none;
     line-height: 1.5;
+  }
+
+  .text {
+    align-items: center;
+    padding: 5rem 1rem;
   }
 }
