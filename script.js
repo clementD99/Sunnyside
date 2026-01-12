@@ -37,3 +37,8 @@ fetchClients().then((clients) => {
     displayClients(element);
   }
 });
+
+// ----- Responsive sidebar ----- //
+
+const sidebar = document.getElementById("responsive-icon");
+const sideMenu = document.getElementsByClassName("boutons");
