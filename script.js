@@ -41,4 +41,9 @@ fetchClients().then((clients) => {
 // ----- Responsive sidebar ----- //
 
 const sidebar = document.getElementById("responsive-icon");
-const sideMenu = document.getElementsByClassName("boutons");
+const sideMenu = document.querySelector(".boutons");
+
+sidebar.addEventListener("click", () => {
+  sideMenu.classList.toggle("open");
+});
+
